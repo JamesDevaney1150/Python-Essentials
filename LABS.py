@@ -82,8 +82,7 @@ x = float(x)
 y=(3*x**3)-(2*x**2)+(3*x)-1
 print("y =", y)
 #---------------------------------------------------------------------------------2.5.1.2:Comments--------------------------------------------------------------------------------------
-#Becoming familiar with the concept of comments in Python.
-
+#Becoming familiar with the concept of comments in Python:
 #this program computes the number of seconds in a given number of hours
 #this program has been written two days ago
 
@@ -98,7 +97,7 @@ a=3
 print("Number of seconds in 3 Hours:", a * seconds)#this is the end of the program that computes the number of seconds in 3 hour
 
 #---------------------------------------------------------------------------------2.6.1.9:Simple input and output--------------------------------------------------------------------------------------
-#Evaluate the results of four basic arithmetic operations.
+#Evaluate the results of four basic arithmetic operations:
 a = float(input("Input a")) # input a float value for variable a here
 b = float(input("Input b:")) # input a float value for variable b here
 
@@ -113,8 +112,58 @@ print("\nThat's all, folks!")
 x = float(input("Enter value for x: "))
 
 # Write your code here.
-y=1/((x+1/(x+1/(x+(1/x)))))
+y=1/((x+1/(x+1/(x+(1/x))))) #evaluating expression given in lab,
 
 print("y =", y)
 
 #---------------------------------------------------------------------------------2.6.1.11:Operators and expressions--------------------------------------------------------------------------------------
+#Simple code able to evaluate the end time of a period of time:
+
+hour = int(input("Starting time (hours): "))
+mins = int(input("Starting time (minutes): "))
+dura = int(input("Event duration (minutes): "))
+
+#Evaluates end timeby using floor division then modulus to give the results of the remainder.
+print((hour +(mins+dura)//60) %24,":",(mins+dura)%60,sep="")
+
+#---------------------------------------------------------------------------------3.1.1.4:Questions and answers--------------------------------------------------------------------------------------
+#simple two-line program that takes the parameter n as input, which is an integer, and prints False if n is less than 100, and True if n is greater than or equal to 100
+n=int(input())
+print(n>=100) #prints True if n greater than 100 and False if n less than 100
+
+#---------------------------------------------------------------------------------3.1.1.10:Comparison operators and conditional execution----------------------------------------------------------------
+#Write a program that utilizes the concept of conditional execution, takes a string as input and output is dependant on input.
+spath=(input())
+lowerspath="spathiphyllum" #used to check if matches input
+lowerspathresult= "No, I want a big Spathiphyllum!" #prints if spath equals lowerspath
+upperspath="Spathiphyllum" #used to check if matches input
+upperspathresult = "Yes - Spathiphyllum is the best plant ever!" #prints if spath equals upperspath
+nospath = "Spathiphyllum! Not "+ spath + "!" #prints if spath doesn't equal lowerspath or upperspath
+
+if spath == lowerspath: print(lowerspathresult) #prints the sentence "Yes - Spathiphyllum is the best plant ever!" to the screen if the inputted string is "Spathiphyllum" (upper-case)
+elif spath == upperspath: print(upperspathresult) #prints "No, I want a big Spathiphyllum!" if the inputted string is "spathiphyllum" (lower-case)
+else: print(nospath) #prints "Spathiphyllum! Not [input]!" 
+
+#---------------------------------------------------------------------------------3.1.1.11: Essentials of the if-else statement----------------------------------------------------------------
+#Tax Calculator
+income = float(input("Enter the annual income: ")) #accept one floating-point value: the income.
+threshold = 85528 #Tax threshold that defines tax rate
+
+if income < threshold: tax = income *(0.18)-556.02 #pay lower tax if income below threshold
+else: tax =(income - threshold)*0.32 + 14839 #pay higher tax if income above threshold
+if tax <=0: tax = 0 #if calculated tax is less than zero, pay no tax
+tax = round(tax, 0)
+print("The tax is:", tax, "thalers")
+
+#---------------------------------------------------------------------------------3.1.1.12: Essentials of the if-elif-else statement----------------------------------------------------------------
+#Gregorian Calendar Leap Year checker
+year = int(input("Enter a year: ")) #Variables defined
+leap = "Leap year"
+common = "Common year"
+gc=1582
+	
+if year < gc:print("Not within the Gregorian calendar period")
+elif year % 4 !=0: print(common) #if a remainder is returned that is not equal to 0 the print function will execute
+elif year % 100 !=0: print(leap) 
+elif year % 400 !=0: print(common)
+else: print(leap)

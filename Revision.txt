@@ -1,0 +1,104 @@
+PE1 Module 1 QUIZ
+Python is an example of : A high-level programming language
+A complete set of known commands is called: an instruction list
+What is a source code? A program written in a high-level programming language
+What do you call a computer program which directly executes instructions written in a programming language? An interpreter
+What Python version is covered in this course? Python 3
+What is CPython? The default implementation of the Python programming language
+What is IDLE? An acronym that stands for Integrated Development and Learning Environment for Python
+What do you call a tool that lets you launch your code step-by-step and inspect it at each moment of execution? A debugger
+How did Python, the programming language get its name? Guido van Rossum named it to honor Monty Python’s Flying Cirus, a BBC comedy series popular in the 1970’s
+Which one of the following is an example of a Python file extension? Py
+PE1 Module 1 TEST
+What is the expected behaviour of the following program? Print(“Hello!”) The program will output Hello! to the screen
+What do you call a file containing a program written in a high-level programming language? A source file
+What is machine code? A low-level programming language consisting of binary digits/bits that the computer reads and understands
+What do you call a command-line interpreters which lets you interact with your OS and execute Python commands and scripts? A console
+What is the expected behaviour of the following program? prin(“Goodbye!”) The program will generate an error message on the screen
+Select the true statements?(Select two answers) Python is free, open-source, and multiplatform Python is a good choice for creating and executing tests for applications
+What is true compilation?(Select two answers) It tends to be faster than interpretation The code is converted directly into machine code executable by the processor
+What are the four fundamental elements that make a language? An alphabet, a lexis, a syntax, and semantics
+What is CPython? It’s the default, reference implementation of Python, written in the C language
+What is the best definition of a script? It’s a text file that contains instructions which make up a Python program
+PE1 Module 2 QUIZ
+The escape character owes its name to the fact that it : changes the meaning of the character next to it
+The meaning of the positional parameter is determined by its: position
+The most important difference between integer and floating-point numbers lies in the fact that: they are stored differently in the computer memory
+The 0x prefix means that the number after it is denoted as: a hexadecimal
+The // operator: performs integer division
+Only one of the following statements is true – which one? Multiplication precedes addition
+The result of the following addition: 123 + 0.0: is equal to 123.0
+Right-sided binding means that the following expression: 1**2**3 will be evaluated: from right to left
+A keyword is a word that:(Select two answers) cannot be used as a function name cannot be used as a variable name
+A value returned by the input() function is: a string
+PE 1 Module 2 TEST
+Left-sided binding determines that the result of the following expression: 1 // 2 * 3 is equal to: 0
+The meaning of the keyword parameter is determined by: the argument’s name specified along with its value
+What is the output of the following snippet if the user enters two lines containing 2 and 4 respectively?
+x = int(input())
+y=int(input())
+x=x // y
+y=y // x
+print(y)
+the code will cause a runtime error
+The result of the following division: 1/1 is equal to 1.0
+The print() function can output values of: any number of arguments (including zero)
+The value twenty point twelve times ten raised to the power of eight should be written as: 20.12E8
+What is the output of the following snippet if the user enters two lines containing 2 and 4 respectively?
+x=int(input())
+y=int(input())
+x=x/y
+y=y/x
+print(y)
+ 8.0
+What is the output of the following snippet if the user enters two lines contaiing 3 and 6 respectively? 
+x = input()
+y = int(input())
+print(x * y)
+333333 
+The ** operator: performs exponentiation 
+The \n digraph forces the print() function to: break the output line
+What is the output of the following snippet if the user enters two lines containing 2 and 4 respectively?
+x=input()
+y=input()
+print(x+y)
+24 
+What is the output of the following snippet if the user enters two lines containing 11 and 4 respectively?
+x= int(input())
+y=int(input())
+x=x%y
+x=x%y
+y=y%x
+print(y)
+1
+What is the output of the following snippet?
+y = 2 + 3 * 5.
+print(Y)
+the snippet will cause an execution error
+Which of the following statements are true? (Select two answers) The ** operator uses right-sided binding. The right arguments of the % operator cannot be zero.
+Which of the following variable names are illegal?(Select two answers) and True
+What is the output of the following snippet?
+x=1
+y=2
+z=x
+x=y
+y=z
+print(x,y)
+2 1 
+What is the output of the following snippet?
+x=1 / 2 + 3 // 3 + 4 ** 2
+print(x)
+17.5
+The 0o prefix means that the number after is denoted as: octal
+What is the output of the following snippet?
+z = y = x = 1
+print(x,y,z, sep=’*’)
+1*1*1
+What is the output of the following snippet if the user enters two lines containing 2 and 4 respectively?
+x = int(input())
+y = int(input())
+print(x+y)
+6
+PE Module 3 QUIZ
+
+
