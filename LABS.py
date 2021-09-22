@@ -123,7 +123,7 @@ hour = int(input("Starting time (hours): "))
 mins = int(input("Starting time (minutes): "))
 dura = int(input("Event duration (minutes): "))
 
-#Evaluates end timeby using floor division then modulus to give the results of the remainder.
+#Evaluates end time by using floor division then modulus to give the results of the remainder.
 print((hour +(mins+dura)//60) %24,":",(mins+dura)%60,sep="")
 
 #---------------------------------------------------------------------------------3.1.1.4:Questions and answers--------------------------------------------------------------------------------------
@@ -167,3 +167,38 @@ elif year % 4 !=0: print(common) #if a remainder is returned that is not equal t
 elif year % 100 !=0: print(leap) 
 elif year % 400 !=0: print(common)
 else: print(leap)
+
+#---------------------------------------------------------------------------------3.2.1.3: Essentials of the while loop - Guess the secret number----------------------------------------------------------------
+#Familiarise with while loop.
+secret_number = 777
+
+print(
+"""
++================================+
+| Welcome to my game, muggle!    |
+| Enter an integer number        |
+| and guess what number I've     |
+| picked for you.                |
+| So, what is the secret number? |
++================================+
+""")
+
+choice = int(input("Pick a number: ")) #User choice that can be used to compare to secret number
+
+while choice != secret_number: #while loop works aslong as choice doesn't equal secret_number
+    print("Ha ha! You're stuck in my loop!")
+    choice = int(input("Try again (Don't choose 777): "))
+print(secret_number, "Well done, muggle! You are free now.") #prints if choice is 777
+
+#---------------------------------------------------------------------------------3.2.1.6: Essentials for the for loop - counting mississippily----------------------------------------------------------------
+#Using the for loop
+import time
+
+# Write a for loop that counts to five.
+i=0
+for i in range (1,6):
+    print(i, "Mississippi") # Body of the loop - print the loop iteration number and the word "Mississippi"
+    time.sleep(1)# Body of the loop - use: time.sleep(1)
+print("Ready or not, here I come!")# Write a print function with the final message.
+#---------------------------------------------------------------------------------3.2.1.9: The break statement - Stuck in a loop----------------------------------------------------------------
+#Familiarise break statement in loops
