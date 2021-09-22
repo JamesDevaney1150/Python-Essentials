@@ -30,25 +30,25 @@
 #y = int(input())
 #print(x+y)
 
-income = float(input("Enter the annual income: "))
+#income = float(input("Enter the annual income: "))
 
 # Write your code here.
-threshold = 85528
+#threshold = 85528
 
-if income < threshold: tax = (income *0.18)-556.02
-else: tax = (income -threshold)*32 +14839.02
-tax = round(tax, 0)
-print("The tax is:", tax, "thalers")
+#if income < threshold: tax = (income *0.18)-556.02
+#else: tax = (income -threshold)*32 +14839.02
+#tax = round(tax, 0)
+#print("The tax is:", tax, "thalers")
 
-income = float(input("Enter the annual income: "))
+#income = float(input("Enter the annual income: "))
 
 # Write your code here.
-threshold = 85528
+#threshold = 85528
 
-if income < threshold: tax = income *(0.18)-556.02
-else: tax = 14839+((income - threshold)*32)
-if tax <=0: tax = 0
-tax = round(tax, 0)
-print("The tax is:", tax, "thalers")
+#if income < threshold: tax = income *(0.18)-556.02
+#else: tax = 14839+((income - threshold)*32)
+#if tax <=0: tax = 0
+#tax = round(tax, 0)
+#print("The tax is:", tax, "thalers")
 
 
