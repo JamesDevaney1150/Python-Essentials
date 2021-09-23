@@ -108,7 +108,7 @@ for letter in user_word:
 print(word_without_vowels)             #them to the variable words_without_vowels, so they print on same line.
 
 #---------------------------------------------------------------------------------3.2.1.14: Essentials of the while loop----------------------------------------------------------------
-
+#whileloop
 blocks = int(input("Enter the number of blocks: "))
 height = 0
 row = 1
@@ -120,13 +120,53 @@ print("The height of the pyramid:", height)
 
 #---------------------------------------------------------------------------------3.2.1.15: Collatz's hypothesis----------------------------------------------------------------
 #Familiarise using the while loop
-
 c0 = int(input("Enter a number: "))
 if c0 < 1: print("¯\_(ツ)_/¯ Can't be a non-negative/zero") #take any non-negative and non-zero integer number and name it c0;
 else: steps=0
 while c0 != 1: #if c0 ≠ 1, skip to point 2
-	if c0 %2 == 0: c0=int(c0/2) #otherwise, if it's odd, evaluate a new c0 as 3 × c0 + 1 #if it's even, evaluate a new c0 as c0 ÷ 2
-	else:c0=3*c0+1 #otherwise, if it's odd, evaluate a new c0 as 3 × c0 + 1
+	if c0 %2 == 0: c0=(c0//2) #otherwise, if it's odd, evaluate a new c0 as 3 × c0 + 1 #if it's even, evaluate a new c0 as c0 ÷ 2
+	else: c0=3*c0+1 #otherwise, if it's odd, evaluate a new c0 as 3 × c0 + 1
 	print(c0)
 	steps += 1 #step counter, counts the number of loops by incrementing 1 everyone loop
 print("steps =",steps)
+
+#---------------------------------------------------------------------------------3.4.1.6: The basics of lists----------------------------------------------------------------
+#Familiarise with lists, creating and modifying
+hat_list = [1, 2, 3, 4, 5]  # This is an existing list of numbers hidden in the hat.
+# Step 1: write a line of code that prompts the user
+# to replace the middle number with an integer number entered by the user.
+replace = int(input("Replace middle number with:"))
+hat_list[2] = replace
+# Step 2: write a line of code that removes the last element from the list.
+del hat_list[-1]
+# Step 3: write a line of code that prints the length of the existing list.
+print("length =", len(hat_list))
+print(hat_list)
+
+#---------------------------------------------------------------------------------3.4.1.13: The basics of lists - the Beatles----------------------------------------------------------------
+#Familiarise with creating, modifying simple lists, using methods to modify lists
+beatles = [] # create an empty list named beatles
+print("Step 1:", beatles)
+beatles.append("John Lennon")      #use the append() method to 
+beatles.append("Paul McCartney")   #add the members of the band to the list
+beatles.append("George Harrison")  
+print("Step 2:", beatles)
+for i in range(2): beatles.append(input("Add Stu Sutcliffe then Pete Best:")) #use the for loop and the append() method
+print("Step 3:", beatles)                                                     #to prompt the user to add members 
+del beatles[3:5] #use the del instruction to remove Stu Sutcliffe and Pete Best from the list
+print("Step 4:", beatles)
+beatles.insert(0, "Ringo Starr")#use the insert() method to add Ringo Starr to the beginning of the lis
+print("Step 5:", beatles)
+# testing list length
+print("The Fab", len(beatles))
+
+#---------------------------------------------------------------------------------3.6.1.9: Operating with lists - basics----------------------------------------------------------------
+#Familiarise with list indexing, utilising in and not in operators
+
+my_list = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
+newlist = []
+for e in my_list:  
+if e not in newlist:newlist.append(e)               #Using in and not in, only if not in list it appends the value
+my_list = newlist[:]                                #this create a list with only unique values
+print("The list with unique elements only:")
+print(my_list)
