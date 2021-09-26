@@ -12,18 +12,19 @@ print("Player x goes first.")
 #2-Define the Turn
 player="x"
 for turn in range(10):
-    r= [int(input("Enter row: "))] #User input selecting the row and column from the lists
-    c= [int(input("Enter column: "))]
-    if tttboard[r][c] == '-': #comparing the element selected
-        tttboard[r][c] = player #if element selected is - then change to value of player (either x or o depending on turn)
+    r= int(input("Enter row: ")) #User input selecting the row and column from the lists , these integers will be used to select the element in the list
+    c= int(input("Enter column: "))
+    if tttboard[r][c] == "-": #comparing the element selected
+        tttboard[r][c]= player #if element selected is - then change to value of player (either x or o depending on turn)
     else:
         print("You can't go there")
         continue
     if turn % 2 == 0:  #changes the players turns to either x or o
         player="o"
-        print("It is", player, "'s turn")
+        print("\n It is", player, "'s turn")
     else:
         player="x"
+        print("\n It is", player, "'s turn")
     print(*tttboard,sep='\n')
 
 #3-Define Win
