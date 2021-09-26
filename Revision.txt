@@ -77,6 +77,8 @@ print(Y)
 the snippet will cause an execution error
 Which of the following statements are true? (Select two answers) The ** operator uses right-sided binding. The right arguments of the % operator cannot be zero.
 Which of the following variable names are illegal?(Select two answers) and True
+
+
 What is the output of the following snippet?
 x=1
 y=2
@@ -100,5 +102,182 @@ y = int(input())
 print(x+y)
 6
 PE Module 3 QUIZ
+An operator able to check whether two values are not qual is coded as: !=
+How many stars will the following snippet send to the console?
+i = 2
+while i >=0:
+	print (“*”)
+i-= 2
+two
+
+How many hashes will the following snippet send to the console?
+for i in range(-1,1):
+	print(“#”)
+two
+What value will be assigned to the x variable?
+z= 10
+y = 0
+x=z>y or z==y
+True 
+What is the output of the following code?
+my_list = [3,1,-1]
+my_list[-1] = my_list[-2]
+print(my_list)
+[3,1,1] 
+The second assignment:
+vals = [0,1,2]
+vals[0], vals[1] = vals[1], vals[2]
+doesn’t change the list’s length
+Take a look at the snippet and choose one of the following statements which is true:
+nums = []
+vals = nums
+vals.append(1)
+nums and vals are of the same length
+Take a look at the snippet and choose on eof the following statements which is true:
+nums = []
+vals = nums[:]
+vals.append(1)
+vals is longer than nums
+How many elements does the my_list list contain?
+my_list = [0 for i in range(1,3)]
+two
+What is the output of the following snippet?
+my_list = [0, 1, 2, 3]
+x=1
+for elem in my_list:
+	x *= elem
+print(x)
+0 
+PE 1 Module 3 TEST
+Take a look at the snippet, and choose the true statements:(Select two answers)
+nums = [1,2,3]
+vals = nums
+del vals[1:2]
+
+nums and vals refer to the same list 
+nums and vals are of the same length
+
+How many stars (*) will the following snippet send to the console?
+i = 0
+while i <=5:
+    i+=1
+    if i %2 ==0:
+        break
+    print("*")
+one
+How many elements does the my_list list contain?
+my_list = [i for i in range(-1,2)]
+three
+
+How many hashes (#) will the following snippet send to the console?
+for i in range(1):
+    print("#")
+else:
+    print("#")
+two
+
+What is the output of the following snippet?
+my_list_1 = [1,2,3]
+my_list_2 = []
+for v in my_list_1:
+    my_list_2.insert(0,v)
+print(my_list_2)
+[3,2,1]
 
 
+
+
+The second assignment:
+vals=[0,1,2]
+vals[0],vals[2]=vals[2],vals[0]
+reverses the list
+
+How many hashes (#) will the following snippet send to the console?
+var=1
+while var<10:
+    print("#")
+    var=var<<1
+four
+
+How many stars (*) will the following snippet send to the console?
+i=0
+while i <=3:
+    i+=2
+    print("*")
+two
+
+What is the output of the following snippet?
+my_list=[1,2,3]
+for v in range(len(my_list)):
+    my_list.insert(1,my_list[v])
+print(my_list)
+[1,1,1,1,2,3]
+
+What is the output of the following snippet?
+my_list = [1,2,3,4]
+print(my_list[-3:-2])
+
+[2]
+
+What value will be assigned to x variable?
+z=10
+y=0
+x=y<z and z>y or y>z and z<y
+True
+
+After execution of the following snippet, the of all vals elements will be equal to:
+vals=[0,1,2]
+vals.insert(0,1)
+del vals[1]
+
+4
+
+
+
+What is the output of the following snippet?
+my_list = [[0,1,2,3]for i in range(2)]
+print(my_list[2][0])
+the snippet will cause a runtime error
+
+Which of the following sentences are true?(Select two answers)
+nums = [1,2,3]
+vals = nums[-1:-2]
+nums is longer than vals 
+nums and vals are two different lists
+
+What is the output of the following snippet?
+t = [[3-i for i in range (3)] for j in range(3)]
+s=0
+for i in range(3):
+    s +=t[i][i]
+print(s)
+6 
+
+What is the output of the following snippet?
+a=1
+b=0
+c=a&b
+d=a|b
+e=a^b
+print(c+d+e)
+2 
+The value eventually assigned to x is equal to:
+x=1
+x=x==x
+True
+
+An operator able to check whether two valyes are equal is coded as:  ==
+
+What is the output of the following snippet?
+my_list=[3,1,-2]
+print(my_list[my_list[-1]])
+1
+
+How many hashes (#) will the following snippet send to the console?
+var=0
+while var <6:
+    var+=1
+    if var % 2 ==0:
+        continue
+    print("#")
+three

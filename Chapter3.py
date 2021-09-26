@@ -166,7 +166,7 @@ print("The Fab", len(beatles))
 my_list = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
 newlist = []
 for e in my_list:  
-if e not in newlist:newlist.append(e)               #Using in and not in, only if not in list it appends the value
+    if e not in newlist:newlist.append(e)               #Using in and not in, only if not in list it appends the value
 my_list = newlist[:]                                #this create a list with only unique values
 print("The list with unique elements only:")
 print(my_list)
