@@ -49,7 +49,7 @@ for i in range(len(test_years)):
 #---------------------------------------------------------------------------------4.3.1.8: Day of the year: writing and using your own functions--------------------------------------------------------------------------------------
 #Familiarise projecting and writing parameterized functions, utilising return statement,building a set of utility functions, using own functions
 def is_year_leap(year):
-    if year < 1582: return False          #code copied from 4.3.1.6
+    if year < 1582:return False          #code copied from 4.3.1.6
     elif year % 4 != 0: return False
     elif year % 100 != 0: return True
     elif year % 400 != 0: return False
@@ -57,7 +57,7 @@ def is_year_leap(year):
 
 def days_in_month(year, month):
     monthlength=[31,28,31,30,31,30,31,31,30,31,30,31]
-	if year<1582 or month <1 or month >12: return None  #code copied from 4.3.1.7
+    if year <1582 or month <1 or month >12: return None  #code copied from 4.3.1.7
     if is_year_leap(year) and month ==2: return 29
     return monthlength[month-1] 
 test_years = [1900, 2000, 2016, 1987]
@@ -76,12 +76,12 @@ for i in range(len(test_years)):
 def day_of_year(year, month, day):
     if year <1582 or month <1 or month >12 or day<1 or day >31: return None #returns None if any arguments are invalid
     days=day #assigns number of days in current month to days variable
-	month=month-1 #doesn't use current month selected in parameter as it has been counted already in days
-	while month >0: #while loop to count each month
-        days= day += days_in_month(year,month) #counts the days in each month as it iterates through the while loop
-		month -=1 #subtracts 1 from month for while loop
-        return days #returns variable days once while loop has ran
-print(day_of_year(2000, 12, 31))
+    month=month-1 #doesn't use current month selected in parameter as it has been counted already in days
+    while month >0: #while loop to count each month
+        days += days_in_month(year,month) #counts the days in each month as it iterates through the while loop
+        month -=1 #subtracts 1 from month for while loop
+    return days #returns variable days once while loop has ran
+print(day_of_year(2000, 12, 31)) 
 #---------------------------------------------------------------------------------4.3.1.9: Prime numbers - how to find them--------------------------------------------------------------------------------------
 #familiarise with classic notions and algorithms, improve skills in definding and using functions
 def is_prime(num):
