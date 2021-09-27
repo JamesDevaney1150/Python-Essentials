@@ -146,3 +146,10 @@
 #vals = nums
 #del vals[1:2]
 #print(nums, vals)
+ 
+        
+
+
+
+
+ 

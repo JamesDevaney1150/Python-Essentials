@@ -36,7 +36,7 @@ for turn in range(10):
 #ACROSS MIDDLE
     elif tttboard[1][0] == "x" and tttboard[1][1] == "x" and tttboard[1][2] == "x":
         print(*tttboard,"YOU WIN",sep='\n')
-    if tttboard[1][0] == "o" and tttboard[1][1] == "o" and tttboard[1][2] == "o":
+    elif tttboard[1][0] == "o" and tttboard[1][1] == "o" and tttboard[1][2] == "o":
         print(*tttboard,"YOU WIN",sep='\n')
 #ACROSS BOTTOM
     elif tttboard[2][0] == "x" and tttboard[2][1] == "x" and tttboard[2][2] == "x":
