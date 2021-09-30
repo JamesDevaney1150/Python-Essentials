@@ -146,43 +146,89 @@
 #vals = nums
 #del vals[1:2]
 #print(nums, vals)
-def is_year_leap(year):
-    if year < 1582:return False          #code copied from 4.3.1.6
-    elif year % 4 != 0: return False
-    elif year % 100 != 0: return True
-    elif year % 400 != 0: return False
-    else: return True
 
-def days_in_month(year, month):
-    monthlength=[31,28,31,30,31,30,31,31,30,31,30,31]
-    if year <1582 or month <1 or month >12: return None  #code copied from 4.3.1.7
-    if is_year_leap(year) and month ==2: return 29
-    return monthlength[month-1] 
-test_years = [1900, 2000, 2016, 1987]
-test_months = [2, 2, 1, 11]
-test_results = [28, 29, 31, 30]
-for i in range(len(test_years)):
-	yr = test_years[i]
-	mo = test_months[i]
-	print(yr, mo, "->", end="")
-	result = days_in_month(yr, mo)
-	if result == test_results[i]:
-		print("OK")
-	else:
-		print("Failed")
-
-def day_of_year(year, month, day):
-    if year <1582 or month <1 or month >12 or day<1 or day >31: return None #returns None if any arguments are invalid
-    days=day #assigns number of days in current month to days variable
-    month=month-1 #doesn't use current month selected in parameter as it has been counted already in days
-    while month >0: #while loop to count each month
-        days += days_in_month(year,month) #counts the days in each month as it iterates through the while loop
-        month -=1 #subtracts 1 from month for while loop
-    return days #returns variable days once while loop has ran
-print(day_of_year(2000, 12, 31)) 
+#my_tuple=[1,2,3,4,5]
+#my_tuple[1] = my_tuple[1] + my_tuple[0]
+#print(my_tuple)
         
+#dictionary = {}
+#my_list = ['a','b','c','d']
+#for i in range(len(my_list)-1):
+#    dictionary[my_list[i]] = (my_list[i],)
 
+#for i in sorted(dictionary.keys()):
+#       k=dictionary[i]
+#       print(k[0])
 
+#def func_1(a):
+#    return a**a
+#def func_2(a):
+#    return func_1(a) * func_1(a)
+#
+#print(func_2(2))
 
-
+#def fun(x,y,z):
+#    return x+2*y+3*z
+#print(fun(0,z=1,y=3))
  
+#def fun(inp=2, out=3):
+#    return inp * out
+#print(fun(out=2))
+
+#def func(a,b):
+#   return a**b
+#print(func(2))
+
+#def fun(x):
+#    x+=1
+#    return x
+#x=2
+#x=fun(x+1)
+#print(x)
+
+#dictionary = {'one':'two','three':'one','two':'three'}
+#v = dictionary['one']
+#for k in range(len(dictionary)):
+#    v = dictionary[v]
+#print(v)
+
+#def fun(x):
+#    if x % 2 ==0:
+#        return 1
+#    else:
+#        return
+#print(fun(fun(2))+1)
+
+#def fun(x):
+#    global y
+#    y=x*x
+#    return y
+#fun(2)
+#print(y)
+
+#def function(x=0):
+#    return x
+
+#def any():
+#    print(var +1, end='')
+
+#var = 1
+#any()
+#print(var)
+
+#tup = (1,2,4,8)
+#tup=tup[1:-1]
+#tup=tup[0]
+#print(tup)
+
+#my_list = ['Mary','had','a','little','lamb']
+#def my_list(my_list):
+#    del my_list[3]
+#    my_list[3] = 'ram'
+#print(my_list(my_list))
+
+def f(x):
+    if x ==0:
+        return 0
+    return x + f(x-1)
+print(f(3))
