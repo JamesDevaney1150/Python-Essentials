@@ -61,7 +61,13 @@ for i in range(4,24,2):
 print("a suitable message",listofInt)
 
 #11b)
+tripledlist=[i*3 for i in listofInt]
 
-for i in listofInt():
-	listofInt.append(i*3)
-print(listofInt)
+#11c)
+print("a suitable message",tripledlist)
+
+#####################################################
+#Section 3 20 marks
+
+#14)
+
